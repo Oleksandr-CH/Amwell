@@ -25,6 +25,6 @@ public class AutomationHooks {
             final byte[] screenshot = ((TakesScreenshot) Driver.get()).getScreenshotAs(OutputType.BYTES);
             scenario.embed(screenshot, "image/png");
         }
-//        Driver.closeDriver();
+        Driver.closeDriver();
     }
 }
